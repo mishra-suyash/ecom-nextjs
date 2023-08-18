@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Nav from '@/components/Nav';
+import HeaderBar from './HeaderBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,6 +27,7 @@ export default function Layout({ children}) {
 			<div className='bg-blue-900 w-screen min-h-screen flex '>
 				<Nav />
 				<div className='bg-white flex-grow mt-1 mr-2 rounded-lg p-4 '>
+               <HeaderBar className={'mb-4'}/>
 					{children}
 				</div>
 			</div>

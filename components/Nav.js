@@ -8,7 +8,7 @@ const activeLink = inactiveLink + ' bg-white text-blue-900';
 
 const MenuItems = ({ className = '', name, icon,link='/', }) => {
    const router = useRouter();
-   const isActive = router.pathname === link;
+   const isActive = link !== '/'?router.pathname.startsWith(link):link === router.pathname;
 	return (
 		<Link
 			href={link}

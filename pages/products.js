@@ -1,10 +1,13 @@
 import React from 'react'
 import Layout from '@/components/Layout'
+import Link from 'next/link';
 
 const products = () => {
   return (
 		<Layout>
-			<h1>Products</h1>
+			<Link className='btn-primary' href={'/products/new'}  >
+            New Product
+         </Link>
 		</Layout>
 	);
 }

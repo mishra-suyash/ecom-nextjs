@@ -3,10 +3,10 @@ import React from 'react'
 
 const index = () => {
   return (
-      <Layout >
-        <h1>Dashboard</h1>
-      </Layout>
-  )
+		<Layout>
+			
+		</Layout>
+	);
 }
 
 export default index
